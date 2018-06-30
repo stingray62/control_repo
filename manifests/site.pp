@@ -7,7 +7,7 @@ node 'pmaster.shade.local' {
 
 node 'cboxes.shade.local' {
 
-  include role::db_server
+  include role::master_server
 
 }
 
