@@ -1,7 +1,9 @@
 node default {
-  file {'/root/README':
-    ensure  => file,
-    content => 'This is a readme',
-    owner   => 'root',
-  }
+}
+node 'pmaster.shade.local' {
+  include role::master_server
+}
+
+node 'cboxes.shade.local' {
+  include role::master_server
 }
